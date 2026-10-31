@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* ============================================================
+   与主题无关的设计令牌 + 默认（晴日）配色
+   useTheme 运行时会把颜色变量注入到 :root，实现无刷新换肤
+   ============================================================ */
+
+:root {
+  /* ---- 颜色：默认亮色主题兜底，避免首屏闪白 ---- */
+  --c-bg: #f4f6fb;
+  --c-bg-soft: #eaeff8;
+  --c-surface: #ffffff;
+  --c-surface-2: #f7f9fd;
+  --c-border: #e4e9f2;
+  --c-border-strong: #d3dbea;
+  --c-text: #18202f;
+  --c-text-soft: #4c586b;
+  --c-text-muted: #8b97a9;
+  --c-primary: #4d7cfe;
+  --c-primary-hover: #3a68ec;
+  --c-primary-soft: rgba(77, 124, 254, 0.12);
+  --c-on-primary: #ffffff;
+  --c-accent: #7c5cff;
+  --c-success: #12b76a;
+  --c-danger: #f04438;
+  --c-warning: #f79009;
+  --c-col-todo: #4d7cfe;
+  --c-col-doing: #f79009;
+  --c-col-done: #12b76a;
+  --c-glow-1: rgba(77, 124, 254, 0.16);
+  --c-glow-2: rgba(124, 92, 255, 0.14);
+  --c-column-bg: rgba(255, 255, 255, 0.55);
+
+  /* ---- 阴影 ---- */
+  --shadow-card: 0 2px 10px rgba(21, 38, 74, 0.06);
+  --shadow-hover: 0 12px 26px rgba(21, 38, 74, 0.13);
+  --shadow-pop: 0 24px 60px rgba(21, 38, 74, 0.18);
+
+  /* ---- 间距 ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+
+  /* ---- 圆角 ---- */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+
+  /* ---- 字体 ---- */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: Consolas, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  /* ---- 过渡 ---- */
+  --transition-fast: 140ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 240ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 420ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---- 层级 ---- */
+  --z-header: 50;
+  --z-dropdown: 80;
+  --z-modal: 100;
+  --z-celebration: 110;
+  --z-toast: 120;
+
+  /* ---- 布局 ---- */
+  --layout-max: 1400px;
+}
